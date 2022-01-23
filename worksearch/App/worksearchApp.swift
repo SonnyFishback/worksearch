@@ -11,7 +11,7 @@ import SwiftUI
 struct worksearchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(appStore: AppStore())
         }
     }
 }

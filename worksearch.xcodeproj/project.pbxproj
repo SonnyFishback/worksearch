@@ -13,6 +13,10 @@
 		FEE5D5C3279B22F0002A991C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE5D5C2279B22F0002A991C /* Preview Assets.xcassets */; };
 		FEE5D5CE279B22F0002A991C /* worksearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5D5CD279B22F0002A991C /* worksearchTests.swift */; };
 		FEE5D5D9279B22F0002A991C /* worksearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5D5D8279B22F0002A991C /* worksearchUITests.swift */; };
+		FEE5D613279D0BE5002A991C /* FileManager.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5D612279D0BE5002A991C /* FileManager.extension.swift */; };
+		FEE5D61E279D0CF7002A991C /* Company.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5D61D279D0CF7002A991C /* Company.model.swift */; };
+		FEE5D620279D0DB3002A991C /* Employee.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5D61F279D0DB3002A991C /* Employee.model.swift */; };
+		FEE5D622279D0DD1002A991C /* AppStore.store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE5D621279D0DD1002A991C /* AppStore.store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,13 @@
 		FEE5D5D4279B22F0002A991C /* worksearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = worksearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE5D5D8279B22F0002A991C /* worksearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worksearchUITests.swift; sourceTree = "<group>"; };
 		FEE5D5DA279B22F0002A991C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE5D612279D0BE5002A991C /* FileManager.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.extension.swift; sourceTree = "<group>"; };
+		FEE5D615279D0C3C002A991C /* companyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = companyData.json; sourceTree = "<group>"; };
+		FEE5D616279D0C5D002A991C /* employeeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = employeeData.json; sourceTree = "<group>"; };
+		FEE5D61D279D0CF7002A991C /* Company.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.model.swift; sourceTree = "<group>"; };
+		FEE5D61F279D0DB3002A991C /* Employee.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.model.swift; sourceTree = "<group>"; };
+		FEE5D621279D0DD1002A991C /* AppStore.store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.store.swift; sourceTree = "<group>"; };
+		FEE5D623279DC1C3002A991C /* testFile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testFile.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +106,9 @@
 		FEE5D5BA279B22ED002A991C /* worksearch */ = {
 			isa = PBXGroup;
 			children = (
-				FEE5D5BB279B22ED002A991C /* worksearchApp.swift */,
-				FEE5D5BD279B22ED002A991C /* ContentView.swift */,
-				FEE5D5BF279B22F0002A991C /* Assets.xcassets */,
-				FEE5D5C4279B22F0002A991C /* Info.plist */,
+				FEE5D611279D0BC7002A991C /* Extensions */,
+				FEE5D614279D0C0A002A991C /* Resources */,
+				FEE5D610279D0278002A991C /* App */,
 				FEE5D5C1279B22F0002A991C /* Preview Content */,
 			);
 			path = worksearch;
@@ -128,6 +138,70 @@
 				FEE5D5DA279B22F0002A991C /* Info.plist */,
 			);
 			path = worksearchUITests;
+			sourceTree = "<group>";
+		};
+		FEE5D610279D0278002A991C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5D618279D0C9C002A991C /* Models */,
+				FEE5D617279D0C94002A991C /* Views */,
+				FEE5D5BB279B22ED002A991C /* worksearchApp.swift */,
+				FEE5D5BD279B22ED002A991C /* ContentView.swift */,
+				FEE5D5BF279B22F0002A991C /* Assets.xcassets */,
+				FEE5D5C4279B22F0002A991C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FEE5D611279D0BC7002A991C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5D612279D0BE5002A991C /* FileManager.extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FEE5D614279D0C0A002A991C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5D615279D0C3C002A991C /* companyData.json */,
+				FEE5D616279D0C5D002A991C /* employeeData.json */,
+				FEE5D623279DC1C3002A991C /* testFile.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FEE5D617279D0C94002A991C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEE5D618279D0C9C002A991C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5D621279D0DD1002A991C /* AppStore.store.swift */,
+				FEE5D61A279D0CD8002A991C /* Employee */,
+				FEE5D619279D0CCA002A991C /* Company */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEE5D619279D0CCA002A991C /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5D61D279D0CF7002A991C /* Company.model.swift */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
+		FEE5D61A279D0CD8002A991C /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				FEE5D61F279D0DB3002A991C /* Employee.model.swift */,
+			);
+			path = Employee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE5D613279D0BE5002A991C /* FileManager.extension.swift in Sources */,
 				FEE5D5BE279B22ED002A991C /* ContentView.swift in Sources */,
+				FEE5D620279D0DB3002A991C /* Employee.model.swift in Sources */,
 				FEE5D5BC279B22ED002A991C /* worksearchApp.swift in Sources */,
+				FEE5D622279D0DD1002A991C /* AppStore.store.swift in Sources */,
+				FEE5D61E279D0CF7002A991C /* Company.model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +499,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"worksearch/Preview Content\"";
 				DEVELOPMENT_TEAM = VAS2R86RUS;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = worksearch/Info.plist;
+				INFOPLIST_FILE = worksearch/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +521,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"worksearch/Preview Content\"";
 				DEVELOPMENT_TEAM = VAS2R86RUS;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = worksearch/Info.plist;
+				INFOPLIST_FILE = worksearch/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

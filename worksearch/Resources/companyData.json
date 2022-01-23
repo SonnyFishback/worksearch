@@ -1,0 +1,81 @@
+[{
+  "id": 1,
+  "company_name": "Jaxworks",
+  "company_zip": "89000-000",
+  "company_location": "6 Green Alley",
+  "employees": [
+
+  ]
+}, {
+  "id": 2,
+  "company_name": "Vipe",
+  "company_zip": "5810",
+  "company_location": "12 Bashford Point",
+  "employees": [
+
+  ]
+}, {
+  "id": 3,
+  "company_name": "Eabox",
+  "company_zip": "8701",
+  "company_location": "7461 Weeping Birch Junction",
+  "employees": [
+
+  ]
+}, {
+  "id": 4,
+  "company_name": "Roodel",
+  "company_zip": "8702",
+  "company_location": "776 Delladonna Drive",
+  "employees": [
+
+  ]
+}, {
+  "id": 5,
+  "company_name": "Zoomlounge",
+  "company_zip": "869-6111",
+  "company_location": "8 Eagan Road",
+  "employees": [
+
+  ]
+}, {
+  "id": 6,
+  "company_name": "Devcast",
+  "company_zip": "869-6111",
+  "company_location": "06108 Hagan Lane",
+  "employees": [
+
+  ]
+}, {
+  "id": 7,
+  "company_name": "Photobug",
+  "company_zip": "869-6111",
+  "company_location": "59 Sugar Trail",
+  "employees": [
+
+  ]
+}, {
+  "id": 8,
+  "company_name": "Linkbridge",
+  "company_zip": "8411",
+  "company_location": "42 Briar Crest Crossing",
+  "employees": [
+
+  ]
+}, {
+  "id": 9,
+  "company_name": "Zazio",
+  "company_zip": "8411",
+  "company_location": "474 Kensington Alley",
+  "employees": [
+
+  ]
+}, {
+  "id": 10,
+  "company_name": "Tagopia",
+  "company_zip": "8411",
+  "company_location": "89 Brown Pass",
+  "employees": [
+
+  ]
+}]
