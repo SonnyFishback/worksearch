@@ -18,19 +18,32 @@ class AppStore : ObservableObject {
     }
     
     private func  loadJSON() {
-        guard let companyDataURL = Bundle.main.url(forResource: "companyData", withExtension: "json") else {
-            print("Error getting url for company data")
-            return
-            }
+//        Create instance of companyData url.
+        guard let companyDataURL = Bundle.main.url(forResource: "Company.data", withExtension: "json"), let employeeDataURL = Bundle.main.url(forResource: "Employee.data", withExtension: "json") else {
+          //            If unable to get URLS return
+              print("Error: having trouble finding employee data or company data files")
+          return
+          }
 
         let decoder = JSONDecoder()
         do {
                 let companyData = try Data(contentsOf: companyDataURL)
+                let employeeData = try Data(contentsOf: employeeDataURL)
                 companies = try decoder.decode([Company].self, from: companyData)
-            print(companies)
+                employees = try decoder.decode([Employee].self, from: employeeData)
             } catch {
             print(error)
         }
 
     }
+    
+    func decode<T: Decodable>(decode type: T, from data: Data) {
+        do {
+            let data = try JSONDecoder().decode([T].self, from: data)
+            print(data)
+        } catch {
+            print(error)
+        }
+    }
+    
 }

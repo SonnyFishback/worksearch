@@ -12,8 +12,10 @@ struct ContentView: View {
     @ObservedObject var appStore : AppStore
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            Text("Hello, world!")
+                .padding()
+        }
     }
 }
 
